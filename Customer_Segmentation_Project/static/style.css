@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+.container h2 {
+    margin-bottom: 20px;
+    color: #2c5364;
+}
+
+/* Form inputs */
+.container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* Button */
+.container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #2c5364;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container button:hover {
+    background: #203a43;
+}
+
+/* Result box */
+.result {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Segment colors */
+.premium {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.loyal {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.risk {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #777;
+}
+a button {
+    margin-top: 10px;
+    background: #1565c0;
+}
+
+a button:hover {
+    background: #0d47a1;
+}

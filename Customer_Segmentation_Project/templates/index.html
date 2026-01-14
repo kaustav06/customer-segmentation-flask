@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Segmentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Customer Segmentation</h2>
+
+    <form action="/predict" method="post">
+        <input type="number" step="any" name="income" placeholder="Income" required>
+        <input type="number" step="any" name="spend" placeholder="Total Spend" required>
+        <input type="number" step="any" name="recency" placeholder="Recency (days)" required>
+        <button type="submit">Predict Segment</button>
+    </form>
+
+    {% if result %}
+        <div class="result">{{ result }}</div>
+    {% endif %}
+
+    {% if chart %}
+        <h3>Customer Segmentation Chart</h3>
+        <img src="{{ url_for('static', filename='chart.png') }}" width="100%">
+    {% endif %}
+    {% if chart %}
+    <h3>Customer Segmentation Chart</h3>
+    <img src="{{ url_for('static', filename='chart.png') }}" width="100%">
+
+    <br><br>
+
+    <a href="/download">
+        <button type="button">⬇️ Download Chart</button>
+    </a>
+{% endif %}
+
+
+    <div class="footer">
+        © 2026 Customer Segmentation Project
+    </div>
+</div>
+
+</body>
+</html>
